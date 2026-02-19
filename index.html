@@ -12,23 +12,26 @@
     font-display: swap;
 }
 
+/* 🔥 전체 여백 완전 제거 */
 html, body{
-    background: transparent;   /* 🔥 투명 배경 */
     margin:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    padding:0;
+    background:transparent;
     font-family:'NeoDonggeunmo', monospace;
 }
 
+/* body를 내용 크기만큼만 */
+body{
+    display:inline-block;
+}
+
+/* 플레이어 */
 .player{
     width:320px;
     background:#ffffff;
     border:2px solid #cdc1d7;
     border-radius:18px;
     padding:14px 16px 16px 16px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.04);
     position:relative;
 }
 
@@ -53,13 +56,13 @@ html, body{
 
 /* 제목 */
 .title{
-    font-size: 20px;
+    font-size:20px;
     color:#535350;
 }
 
 /* 작곡가 */
 .artist{
-    font-size: 12px;
+    font-size:12px;
     color:#cdc1d7;
     margin-top:4px;
 }
